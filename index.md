@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 统计学知识梳理
 
 You can use the [editor on GitHub](https://github.com/zwenx/zwenx.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
