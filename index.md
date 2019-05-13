@@ -94,7 +94,7 @@ $ \frac{n_x}{n}$代表样本发生事件$X$的频率。
 
 大数定律可用概率极限值定义:
 则对任意正数$\varepsilon >0 $，下式成立：
-:$ \lim_{n \to \infty}{P{\left\{ \left|\frac{n_x}{n} - p \right| < \varepsilon \right\}}} = 1$
+:$ \lim_{n \to \infty}{P{\left\{ \left|\frac{n_x}{n} - p \right| < \varepsilon \right\}}} = 1 $
 
 定理表明事件发生的频率依概率收敛于事件的总体概率。
 定理以严格的数学形式表达了频率的稳定性。
