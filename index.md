@@ -93,7 +93,7 @@ $$
 
 设$a_1,\ a_2,\ \dots\ ,\ a_n,\ \dots$ 为相互独立的随机变量，其[[数学期望]]为：$ \operatorname{E}(a_i) = \mu \quad (i = 1,\ 2,\ \dots) $，[[方差]]为：$ \operatorname{Var}(a_i) = \sigma^2 \quad (i=1,\ 2,\ \dots)$
 
-则序列$\overline{a}= \frac{1}{n} \sum_{i=1}^n a_i</math>[[依概率收敛]]于<math>\mu</math>（即收敛于此数列的数学期望<math>E(a_i)$）。
+则序列$\overline{a}= \frac{1}{n} \sum_{i=1}^n a_i$[[依概率收敛]]于$\mu$（即收敛于此数列的数学期望$E(a_i)$）。
 
 换言之，在定理条件下，当$n$无限变大时，$n$个随机变量的[[算术平均]]将变成一个常数。
 
