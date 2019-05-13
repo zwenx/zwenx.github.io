@@ -20,11 +20,11 @@ $$
 
 ## 泊松分布
 
-**Poisson分布**（法语：loi de Poisson，英语：Poisson distribution），译名有**泊松分布**、**普阿松分布**、**帕松分布**、**布瓦松分布**、**布阿松分布**、**波以松分布**、**卜氏分配**等，又称泊松小数法则（Poisson law of small numbers），是一种[统计](https://zh.wikipedia.org/wiki/統計)与[概率](https://zh.wikipedia.org/wiki/概率)学里常见到的[离散概率分布](https://zh.wikipedia.org/wiki/機率分佈)，由[法国](https://zh.wikipedia.org/wiki/法國)[数学家](https://zh.wikipedia.org/wiki/數學家)[西莫恩·德尼·泊松](https://zh.wikipedia.org/wiki/西莫恩·丹尼·泊松)（Siméon-Denis Poisson）在1838年时发表。
+**Poisson分布**（法语：loi de Poisson，英语：Poisson distribution），译名有**泊松分布**、**普阿松分布**、**帕松分布**、**布瓦松分布**、**布阿松分布**、**波以松分布**、**卜氏分配**等，又称泊松小数法则（Poisson law of small numbers），是一种统计与概率学里常见到的离散概率分布
 
-泊松分布适合于描述单位时间内随机事件发生的次数的概率分布。如某一服务设施在一定时间内受到的服务请求的次数，[电话](https://zh.wikipedia.org/wiki/电话)[交换机](https://zh.wikipedia.org/wiki/交换机)接到呼叫的次数、汽车站台的候客人数、机器出现的故障数、[自然灾害](https://zh.wikipedia.org/wiki/自然灾害)发生的次数、DNA序列的变异数、放射性原子核的衰变数、[激光](https://zh.wikipedia.org/wiki/雷射)的光子数分布等等。
+泊松分布适合于描述单位时间内随机事件发生的次数的概率分布。如某一服务设施在一定时间内受到的服务请求的次数，电话、交换机接到呼叫的次数、汽车站台的候客人数、机器出现的故障数、自然灾害发生的次数、DNA序列的变异数、放射性原子核的衰变数、激光的光子数分布等等。
 
-泊松分布的[概率质量函数](https://zh.wikipedia.org/wiki/概率质量函数)为：
+泊松分布的概率质量函数为：
 $$
 P(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
 $$
@@ -104,15 +104,15 @@ $ \frac{n_x}{n}$代表样本发生事件$X$的频率。
 
 ## 正态分布
 
-''正态分布''又名“高斯分布''，是一個非常常見的[[概率分布。正态分布在上十分重要，
+''正态分布''又名“高斯分布''，是一個非常常見的概率分布。正态分布在上十分重要，
 
 若随机变量$X$服從一個位置參數為$\mu$、尺度參數為$\sigma$的正态分布，记为：
-:<math>X \sim N(\mu,\sigma^2),</math><ref name="ISBN9789864128990">{{cite book|author= Shaou-Gang Miaou|coauthors=Jin-Syan Chou|title=《Fundamentals of probability and statistics》|year=2012|publisher=高立圖書|isbn=9789864128990|pages=第147頁}}</ref>
-則其[[機率密度函數]]為
-:<math>f(x) = {1 \over \sigma\sqrt{2\pi} }\,e^{- {{(x-\mu )^2 \over 2\sigma^2}}}</math><ref name="ISBN9789864128990"/>
+￥X \sim N(\mu,\sigma^2)$
+則其機率密度函數為
+$f(x) = {1 \over \sigma\sqrt{2\pi} }\,e^{- {{(x-\mu )^2 \over 2\sigma^2}}}$
 
-常態分布的[[數學期望]]值或[[期望值]]<math>\mu</math>等於位置參數，決定了分布的位置；其[[方差]]<math>\sigma^2</math>的開平方或[[標準差]]<math>\sigma</math>等於尺度參數，決定了分布的幅度。
+常態分布的[[數學期望]]值或[[期望值]]<math>\mu</math>等於位置參數，決定了分布的位置；其[[方差]]$\sigma^2$的開平方或[[標準差]]$\sigma$等於尺度參數，決定了分布的幅度。
 
-常態分布的機率密度函數曲線呈鐘形，因此人們又經常稱之為'''鐘形曲線'''（类似于寺庙里的大钟，因此得名）。我們通常所說的'''標準常態分布'''是位置參數<math>\mu = 0</math>，尺度參數<math>\sigma^2 = 1</math>的常態分布<ref name="ISBN9789864128990"/>（見右圖中紅色曲線）。
+常態分布的機率密度函數曲線呈鐘形，因此人們又經常稱之為'''鐘形曲線'''（类似于寺庙里的大钟，因此得名）。我們通常所說的'''標準常態分布'''是位置參數$\mu = 0$，尺度參數$\sigma^2 = 1$的正态分布。
 
 ### 
