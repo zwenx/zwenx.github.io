@@ -72,7 +72,7 @@ $$
 
 #### 方差
 
-$\operatorname{Var}(X_1)=\operatorname{Var}(X_2)=\,\cdots\,= \sigma^2 <\infty$有限的假设是'''非必要'''的。很大或者无穷大的方差会使其收敛得緩慢一些，但大数定律仍然成立。通常采用这个假设来使证明更加简洁。
+$\operatorname{Var}(X_1)=\operatorname{Var}(X_2)=\,\cdots\,= \sigma^2 <\infty$有限的假设是''非必要''的。很大或者无穷大的方差会使其收敛得緩慢一些，但大数定律仍然成立。通常采用这个假设来使证明更加简洁。
 
 ### 弱大数定律
 
@@ -80,18 +80,20 @@ $\operatorname{Var}(X_1)=\operatorname{Var}(X_2)=\,\cdots\,= \sigma^2 <\infty$�
 $$
 \overline{X}_n\ \xrightarrow{P}\ \mu \quad\textrm{as}\quad n \to \infty
 $$
-也就是说对于任意正数 ''ε'',
+也就是说对于任意正数 ε,
 $$
 \lim_{n\to\infty}P\left(\,|\overline{X}_n-\mu| > \varepsilon\,\right) = 0
 $$
 即
 $$
-P\left( \lim_{n\to\infty}\overline{X}_n=\mu\right) = 1
+<math>P\left( \lim_{n\to\infty}\overline{X}_n=\mu\right) = 1<\math>
 $$
 
 ### 切比雪夫定理的特殊情况
 
-设$a_1,\ a_2,\ \dots\ ,\ a_n,\ \dots$ 为相互独立的随机变量，其[[数学期望]]为：$ \operatorname{E}(a_i) = \mu \quad (i = 1,\ 2,\ \dots) $，[[方差]]为：$ \operatorname{Var}(a_i) = \sigma^2 \quad (i=1,\ 2,\ \dots)$
+设$a_1,\ a_2,\ \dots\ ,\ a_n,\ \dots$ 为相互独立的随机变量，
+数学期望：$ \operatorname{E}(a_i) = \mu \quad (i = 1,\ 2,\ \dots) $
+方差：$ \operatorname{Var}(a_i) = \sigma^2 \quad (i=1,\ 2,\ \dots)$
 
 则序列$\overline{a}= \frac{1}{n} \sum_{i=1}^n a_i$[[依概率收敛]]于$\mu$（即收敛于此数列的数学期望$E(a_i)$）。
 
