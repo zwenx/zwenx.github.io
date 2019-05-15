@@ -158,126 +158,52 @@ $f(x) = \frac{1}{\sqrt{2\pi}} \, \exp\left(-\frac{x^2}{2} \right)$
 - 99.993666%的面積在平均數左右四個標準差$4 \sigma$的範圍內。
 - 函數曲線的[[拐點]]（inflection point）為離平均數一個標準差距離的位置。
 
-=== 累積分布函數 ===
-[[File:Normal Distribution CDF.svg|325px|thumb|上图所示的機率密度函数的累積分布函數]]
+== 累積分布函數 ==
 
-[[累積分佈函數|累積分布函數]]是指隨機變數<math>X</math>小於或等於<math>x</math>的機率，用機率密度函數表示為
-
-:<math>
+累積分布函數是指隨機變數$X$小於或等於$x$的機率，用機率密度函數表示為
+$$
 F(x;\mu,\sigma)
 =
-\frac{1}{\sigma\sqrt{2\pi}}
-\int_{-\infty}^x
- \exp
- \left( -\frac{(t - \mu)^2}{2\sigma^2}
-\ \right)\, dt.
-</math>
-
-常態分布的累積分布函数能够由一個叫做[[误差函数]]的[[特殊函数]]表示：
-:<math>
+\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^x \exp \left( -\frac{(t - \mu)^2}{2\sigma^2}\ \right)\, dt.
+$$
+常態分布的累積分布函数能够由一個叫做误差函数的特殊函数表示：
+$$
 \Phi(z)=
-\frac12 \left[1 + \operatorname{erf}\left(\frac{z-\mu}{\sigma\sqrt2}\right)\right] .</math>
-
-'''標準常態分布'''的累積分布函數習慣上記為<math>\Phi</math>，它僅僅'''是指<math>\mu=0</math>，<math>\sigma=1</math>時'''的值，
-
-:<math>
+\frac12 \left[1 + \operatorname{erf}\left(\frac{z-\mu}{\sigma\sqrt2}\right)\right]
+$$
+标准正态分布的累積分布函數习惯记为$\Phi$，它是指$\mu=0$，$\sigma=1$時的值，
+$$
 \Phi(x)
-=F(x;0,1)=
-\frac{1}{\sqrt{2\pi}}
-\int_{-\infty}^x
-\exp\left(-\frac{t^2}{2}\right)
-\, dt.
-</math>
-
+=F(x;0,1)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^x\exp\left(-\frac{t^2}{2}\right)\, dt.
+$$
 將一般常態分布用[[誤差函數]]表示的公式简化，可得：
-
-:<math>
-\Phi(z)
-=
-\frac{1}{2} \left[ 1 + \operatorname{erf} \left( \frac{z}{\sqrt{2}} \right) \right]
-.
-</math>
-
+$$
+\Phi(z)=\frac{1}{2} \left[ 1 + \operatorname{erf} \left( \frac{z}{\sqrt{2}} \right) \right]
+$$
 它的[[反函數]]被稱為反誤差函數，為：
+$$
+\Phi^{-1}(p)=\sqrt2\;\operatorname{erf}^{-1} \left(2p - 1 \right)
+$$
+該分位數函數有時也被稱為probit函數。probit函數已被證明沒有初等原函数。
 
-:<math>
-\Phi^{-1}(p)
-=
-\sqrt2
-\;
-\operatorname{erf}^{-1} \left(2p - 1 \right)
-.
-</math>
+常態分布的分佈函數$\Phi(x)$沒有解析表達式，它的值可以通過[[數值積分]]、[[泰勒級數]]或者[[漸進序列]]近似得到。
 
-該分位數函數有時也被稱為[[probit]]函數。[[probit]]函數已被證明沒有初等原函数。
+正态分布的動差產生函數如下：
+$$
+M_X(t)={E}\left( e^{tX}\right)
+ =\int_{-\infty}^{\infty}\frac{1} {\sigma \sqrt{2\pi} } e^{\left( -\frac{(x - \mu)^2}{2 \sigma^2} \right)} e^{tx}\, dx
+ =e^{\left(\mu t + \frac{\sigma^2 t^2}{2}\right)}
+$$
+過在指數函數內配平方得到。
 
-'''常態分布的[[分佈函數|分布函數]]<math>\Phi(x)</math>沒有解析表達式'''，它的值可以通過[[數值積分]]、[[泰勒級數]]或者[[漸進序列]]近似得到。
-
-=== 生成函數 ===
-==== 矩母函数 ====
-[[動差生成函數]]或矩生成函數或動差產生函數被定義為<math>\exp(tX)</math>的期望值。
-
-常態分布的動差產生函數如下：
-
-:{|
-|-
-| <math>M_X(t)\,</math> || <math>=
-\mathrm{E}
-\left(
- e^{tX}
-\right)
-</math>
-|-
-|   || <math>=
-\int_{-\infty}^{\infty}
- \frac
- {1}
- {\sigma \sqrt{2\pi} }
- e^{\left( -\frac{(x - \mu)^2}{2 \sigma^2} \right)}
- e^{tx}
-\, dx
-</math>
-|-
-|   || <math>=
-e^{
-\left(
- \mu t + \frac{\sigma^2 t^2}{2}
-\right)}
-</math>
-|}
-可以通過在指數函數內配平方得到。
-
-==== 特徵函數 ====
-[[特征函数 (概率论)|特徵函數]]被定義為<math>\exp (i t X)</math>的[[期望值]]，其中<math>i</math>是虛數單位.<!---then what is t?--->
-對於一個常态分布來講，特徵函數是：
-:{|
-|-
-| <math>\phi_X(t;\mu,\sigma)\!</math> || <math>=
-\mathrm{E}
-\left[
- \exp(i t X)
-\right]
-</math>
-|-
-|   || <math>=
-\int_{-\infty}^{\infty}
- \frac{1}{\sigma \sqrt{2\pi}}
- \exp
- \left(- \frac{(x - \mu)^2}{2\sigma^2}
- \right)
- \exp(i t x)
-\, dx
-</math>
-|-
-|   || <math>=
-\exp
-\left(
- i \mu t - \frac{\sigma^2 t^2}{2}
-\right)
-.
-</math>
-|}
-把矩生成函數中的<math>t</math>換成<math>i t</math>就能得到特徵函數。
+==特征函数==
+特徵函數被定義為$\exp (i t X)$的[[期望值]]，其中$\Phi^{-1}(p)=\sqrt2\;\operatorname{erf}^{-1} \left(2p - 1 \right)i$是虛數單位.对于一个特征函数来讲，特徵函數是：
+$$
+\phi_X(t;\mu,\sigma)\!=\mathrm{E}\left[ \exp(i t X)\right]
+=\int_{-\infty}^{\infty} \frac{1}{\sigma \sqrt{2\pi}} \exp \left(- \frac{(x - \mu)^2}{2\sigma^2} \right) \exp(i t x)\, dx
+=\exp\left( i \mu t - \frac{\sigma^2 t^2}{2}\right)
+$$
+把矩生成函數中的$t$換成$i t<$就能得到特徵函數。
 
 ## 置信区间
 
