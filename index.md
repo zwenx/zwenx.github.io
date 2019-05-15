@@ -22,7 +22,7 @@
 
 ### 概率质量函数
 
-　　　一般来说，如果一个随机变量X满足二项分布的话，那么它一定有一个参数n∈ ℕ且还有一个参数p∈ [0,1]。这样的话，我们可以把关于X的二项分布写成X ~ B(n, p)。对应的概率质量函数如下。
+　　　一般来说，如果一个随机变量X满足二项分布的话，那么它一定有一个参数n∈ ℕ且还有一个参数p∈ [0,1]。这样的话，我们可以把关于X的二项分布写成$X ~ B(n, p)$。对应的概率质量函数如下。
 
 ### 累积分布函数
 
@@ -41,7 +41,6 @@ $$
 P(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
 $$
 
-
 ## 大数定律
 
 ### 示例
@@ -50,8 +49,6 @@ $$
 $$
 \frac{1+2+3+4+5+6}{6} = 3.5
 $$
-
-
 根据大数定理，如果多次抛掷骰子，随着抛掷次数的增加，平均值（样本平均值）应该接近3.5，根据大数定理，在多次伯努利实验中，实验概率最后收敛于理论推断的概率值，对于伯努利随机变量，理论推断的成功概率就是期望值，而若对n个相互独立的随机变量的平均值，频率越多则相对越精准。
 
 例如硬币投掷即伯努利实验，当投掷一枚均匀的硬币，理论上得出的正面向上的概率应是1/2。因此，根据大数定理，正面朝上的比例在相对“大”的数字下，“理应”接近为1/2，尤其是正面朝上的概率在n次实验（n接近无限大时）后应几近收敛到1/2。
@@ -70,7 +67,7 @@ $$
 $$
 其中 $X_1$,$X_2$, ... 是独立同分布、期望值$\operatorname{E}(X_1)=\operatorname{E}(X_2)=\,\cdots\,=\mu$ 且皆[[勒贝格可积]]的随机变量构成的无穷序列。$X_j$的勒贝格可积性意味着期望值 $\operatorname{E}(X_j)$存在且有限。
 
-#### 方差
+==方差==
 
 $\operatorname{Var}(X_1)=\operatorname{Var}(X_2)=\,\cdots\,= \sigma^2 <\infty$有限的假设是''非必要''的。很大或者无穷大的方差会使其收敛得緩慢一些，但大数定律仍然成立。通常采用这个假设来使证明更加简洁。
 
@@ -86,35 +83,35 @@ $$
 $$
 即
 $$
-<math>P\left( \lim_{n\to\infty}\overline{X}_n=\mu\right) = 1<\math>
+P\left( \lim_{n\to\infty}\overline{X}_n=\mu\right) = 1
 $$
 
 ### 切比雪夫定理的特殊情况
 
-设$a_1,\ a_2,\ \dots\ ,\ a_n,\ \dots$ 为相互独立的随机变量，
-数学期望：$ \operatorname{E}(a_i) = \mu \quad (i = 1,\ 2,\ \dots) $
-方差：$ \operatorname{Var}(a_i) = \sigma^2 \quad (i=1,\ 2,\ \dots)$
+设$a_1,\ a_2,\ \dots\ ,\ a_n,\ \dots$ 为相互独立的随机变量
 
-则序列$\overline{a}= \frac{1}{n} \sum_{i=1}^n a_i$[[依概率收敛]]于$\mu$（即收敛于此数列的数学期望$E(a_i)$）。
+数学期望：$\operatorname{E}(a_i) = \mu \quad (i = 1,\ 2,\ \dots)$
 
-换言之，在定理条件下，当$n$无限变大时，$n$个随机变量的[[算术平均]]将变成一个常数。
+方差：$ \operatorname{Var}(a_i) = \sigma^2 \quad (i=1,\ 2,\ \dots) $
+
+则序列： $\overline{a}= \frac{1}{n} \sum_{i=1}^n a_i$ 依概率收敛于$\mu$（即收敛于此数列的数学期望$E(a_i)$）。
+
+换言之，在定理条件下，当 $n$ 无限变大时，$n$个随机变量的算术平均将变成一个常数。
 
 ### 伯努利大数定律
 
-设在$n$次独立重复伯努利试验中，
+设在 $n$ 次独立重复伯努利试验中，
 事件$X$发生的次数为$ n_x$。
-事件$X$在每次试验中发生的母體機率为$p$。
+事件$X$在每次试验中发生的总体概率为$p$。
 $ \frac{n_x}{n}$代表样本发生事件$X$的频率。
 
 大数定律可用概率极限值定义:
-则对任意正数$\varepsilon >0 $，下式成立：
+则对任意正数 $\varepsilon >0 $，下式成立：
 $ \lim_{n \to \infty}{P{\left\{ \left|\frac{n_x}{n} - p \right| < \varepsilon \right\}}} = 1 $
 
 定理表明事件发生的频率依概率收敛于事件的总体概率。
 定理以严格的数学形式表达了频率的稳定性。
 就是说当$n$很大时，事件发生的频率于总体概率率有较大偏差的可能性很小。
-
-
 
 ## 正态分布
 
@@ -125,74 +122,226 @@ $ X \sim N(\mu,\sigma^2) $
 則其機率密度函數為
 $ f(x) = {1 \over \sigma\sqrt{2\pi} }\,e^{- {{(x-\mu )^2 \over 2\sigma^2}}} $
 
-常態分布的[[數學期望]]值或[[期望值]]$\mu$等於位置參數，決定了分布的位置；其[[方差]]$\sigma^2$的開平方或[[標準差]]$\sigma$等於尺度參數，決定了分布的幅度。
+常態分布的數學期望值或期望值$\mu$等於位置參數，決定了分布的位置；其方差$\sigma^2$的開平方或标准差$\sigma$等於尺度參數，決定了分布的幅度。
 
-常態分布的機率密度函數曲線呈鐘形，因此人們又經常稱之為'''鐘形曲線'''（类似于寺庙里的大钟，因此得名）。我們通常所說的'''標準常態分布'''是位置參數$\mu = 0$，尺度參數$\sigma^2 = 1$的正态分布。
+通常所說的'''標準常態分布'''是位置參數$\mu = 0$，尺度參數$\sigma^2 = 1$的正态分布。
+
+### 概要
+
+正态分布是自然科学与行为科学中的定量现象的一个方便模型。各种各样的心理学测试分数和物理现象比如光子计数都被发现近似地服从正态分布。尽管这些现象的根本原因经常是未知的，理论上可以证明如果把许多小作用加起来看做一个变量，那么这个变量服从正态分布（在R.N.Bracewell的Fourier transform and its application中可以找到一种简单的证明）。正态分布出现在许多区域统计：例如，采样分布均值是近似地正态的，即使被采样的样本的原始群体分布并不服从正态分布。另外，正态分布信息熵在所有的已知均值及方差的分布中最大，这使得它作为一种均值以及方差已知的分布的自然选择。正态分布是在统计以及许多统计测试中最广泛应用的一类分布。在概率论，正态分布是几种连续以及离散分布的极限分布。
+
+### 正态分布的定义
+
+有几种不同的方法用来说明一个随机变量。最直观的方法是概率密度函数，这种方法能够表示随机变量每个取值有多大的可能性。累积分布函数是一种概率上更加清楚的方法，请看下边的例子。还有一些其他的等价方法，例如cumulant、特征函数、动差生成函数以及cumulant-生成函数。这些方法中有一些对于理论工作非常有用，但是不够直观。请参考关于概率分布的讨论。
+
+==概率密度函數==
+'''正态分布'''的概率密度函数均值为$\mu$ 方差为$\sigma^2$或标准差$\sigma$是高斯函數的一个惯例：
+$f(x;\mu,\sigma)=\frac{1}{\sigma\sqrt{2\pi}} \, \exp \left( -\frac{(x- \mu)^2}{2\sigma^2} \right) $
+
+请看指數函數以及$\pi$
+
+如果一個隨機變量$X$服從這個分布，我們寫作
+$X$ ~ $N(\mu, \sigma^2)$
+如果$\mu = 0$並且$\sigma = 1$，這個分布被稱為'''标准正态分布'''，這個分布能夠簡化為
+
+$f(x) = \frac{1}{\sqrt{2\pi}} \, \exp\left(-\frac{x^2}{2} \right)$
+
+右邊是給出了不同參數的正态分布的函數圖。
+
+正态分布中一些值得注意的量：
+
+- 密度函數關於平均值對稱
+- 平均值與它的眾數以及中位數（median）同一數值。
+- 函數曲線下68.268949%的面積在平均數左右的一個標準差範圍內。
+- 95.449974%的面積在平均數左右兩個標準差$2 \sigma$的範圍內。
+- 99.730020%的面積在平均數左右三個標準差$3 \sigma$的範圍內。
+- 99.993666%的面積在平均數左右四個標準差$4 \sigma$的範圍內。
+- 函數曲線的[[拐點]]（inflection point）為離平均數一個標準差距離的位置。
+
+=== 累積分布函數 ===
+[[File:Normal Distribution CDF.svg|325px|thumb|上图所示的機率密度函数的累積分布函數]]
+
+[[累積分佈函數|累積分布函數]]是指隨機變數<math>X</math>小於或等於<math>x</math>的機率，用機率密度函數表示為
+
+:<math>
+F(x;\mu,\sigma)
+=
+\frac{1}{\sigma\sqrt{2\pi}}
+\int_{-\infty}^x
+ \exp
+ \left( -\frac{(t - \mu)^2}{2\sigma^2}
+\ \right)\, dt.
+</math>
+
+常態分布的累積分布函数能够由一個叫做[[误差函数]]的[[特殊函数]]表示：
+:<math>
+\Phi(z)=
+\frac12 \left[1 + \operatorname{erf}\left(\frac{z-\mu}{\sigma\sqrt2}\right)\right] .</math>
+
+'''標準常態分布'''的累積分布函數習慣上記為<math>\Phi</math>，它僅僅'''是指<math>\mu=0</math>，<math>\sigma=1</math>時'''的值，
+
+:<math>
+\Phi(x)
+=F(x;0,1)=
+\frac{1}{\sqrt{2\pi}}
+\int_{-\infty}^x
+\exp\left(-\frac{t^2}{2}\right)
+\, dt.
+</math>
+
+將一般常態分布用[[誤差函數]]表示的公式简化，可得：
+
+:<math>
+\Phi(z)
+=
+\frac{1}{2} \left[ 1 + \operatorname{erf} \left( \frac{z}{\sqrt{2}} \right) \right]
+.
+</math>
+
+它的[[反函數]]被稱為反誤差函數，為：
+
+:<math>
+\Phi^{-1}(p)
+=
+\sqrt2
+\;
+\operatorname{erf}^{-1} \left(2p - 1 \right)
+.
+</math>
+
+該分位數函數有時也被稱為[[probit]]函數。[[probit]]函數已被證明沒有初等原函数。
+
+'''常態分布的[[分佈函數|分布函數]]<math>\Phi(x)</math>沒有解析表達式'''，它的值可以通過[[數值積分]]、[[泰勒級數]]或者[[漸進序列]]近似得到。
+
+=== 生成函數 ===
+==== 矩母函数 ====
+[[動差生成函數]]或矩生成函數或動差產生函數被定義為<math>\exp(tX)</math>的期望值。
+
+常態分布的動差產生函數如下：
+
+:{|
+|-
+| <math>M_X(t)\,</math> || <math>=
+\mathrm{E}
+\left(
+ e^{tX}
+\right)
+</math>
+|-
+|   || <math>=
+\int_{-\infty}^{\infty}
+ \frac
+ {1}
+ {\sigma \sqrt{2\pi} }
+ e^{\left( -\frac{(x - \mu)^2}{2 \sigma^2} \right)}
+ e^{tx}
+\, dx
+</math>
+|-
+|   || <math>=
+e^{
+\left(
+ \mu t + \frac{\sigma^2 t^2}{2}
+\right)}
+</math>
+|}
+可以通過在指數函數內配平方得到。
+
+==== 特徵函數 ====
+[[特征函数 (概率论)|特徵函數]]被定義為<math>\exp (i t X)</math>的[[期望值]]，其中<math>i</math>是虛數單位.<!---then what is t?--->
+對於一個常态分布來講，特徵函數是：
+:{|
+|-
+| <math>\phi_X(t;\mu,\sigma)\!</math> || <math>=
+\mathrm{E}
+\left[
+ \exp(i t X)
+\right]
+</math>
+|-
+|   || <math>=
+\int_{-\infty}^{\infty}
+ \frac{1}{\sigma \sqrt{2\pi}}
+ \exp
+ \left(- \frac{(x - \mu)^2}{2\sigma^2}
+ \right)
+ \exp(i t x)
+\, dx
+</math>
+|-
+|   || <math>=
+\exp
+\left(
+ i \mu t - \frac{\sigma^2 t^2}{2}
+\right)
+.
+</math>
+|}
+把矩生成函數中的<math>t</math>換成<math>i t</math>就能得到特徵函數。
 
 ## 置信区间
 
-在统计学中，一个概率样本的**置信区间**（英语：Confidence interval，CI），是对产生这个样本的总体的参数分布（Parametric Distribution）中的某一个未知参数值，以区间形式给出的估计。相对于点估计（Point Estimation）用一个样本统计量来估计参数值，置信区间还蕴含了估计的精确度的信息。在现代机器学习中越来越常用的置信集合（Confidence Set）概念是置信区间在多维分析的推广[1]。
+在统计学中，一个概率样本的**置信区间**（英语：Confidence interval，CI），是对产生这个样本的总体的参数分布（Parametric Distribution）中的某一个未知参数值，以区间形式给出的估计。相对于点估计（Point Estimation）用一个样本统计量来估计参数值，置信区间还蕴含了估计的精确度的信息。在现代机器学习中越来越常用的置信集合（Confidence Set）概念是置信区间在多维分析的推广。
 
-置信区间在频率学派中间使用，其在贝叶斯统计中的对应概念是可信区间（Credible Interval）。两者建立在不同的概念基础上的，贝叶斯统计将分布的位置参数视为随机变量，并对给定观测到的数据之后未知参数的后验分布进行描述，故无论对随机样本还是已观测数据，构造出来的可信区间，其可信水平都是一个合法的概率[2]；而置信区间的置信水平，只在考虑随机样本时可以被理解为一个概率。
+置信区间在频率学派中间使用，其在贝叶斯统计中的对应概念是可信区间（Credible Interval）。两者建立在不同的概念基础上的，贝叶斯统计将分布的位置参数视为随机变量，并对给定观测到的数据之后未知参数的后验分布进行描述，故无论对随机样本还是已观测数据，构造出来的可信区间，其可信水平都是一个合法的概率；而置信区间的置信水平，只在考虑随机样本时可以被理解为一个概率。
 
 ### 定义
 
-;对随机样本的定义
-定义置信区间最清晰的方式是从一个'''随机样本'''出发。考虑一个一维随机变量<math>{\cal X}</math>服从分布<math>{\cal F}</math>，又假设<math>\theta</math>是<math>{\cal F}</math>的参数之一。假设我们的数据采集计划将要独立地抽样<math>n</math>次，得到一个随机样本<math>\{X_1,\ldots,X_n\}</math>，注意这里所有的<math>X_i</math>都是随机的，我们是在讨论一个尚未被观测的数据集。如果存在'''统计量'''(统计量定义为样本<math>X=\{X_1,\ldots,X_n\}</math>的一个函数，且不得依赖于任何未知参数)<math>u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)</math>满足<math>u(X_1,\ldots,X_n)<v(X_1,\ldots,X_n)</math>使得：
+==对随机样本的定义==
+定义置信区间最清晰的方式是从一个'''随机样本'''。考虑一个一维随机变量$ {\cal X} $服从分布$ {\cal F} $，又假设$\theta$是${\cal F}$的参数之一。假设我们的数据采集计划将要独立地抽样$n$次，得到一个随机样本$\{X_1,\ldots,X_n\}$，注意这里所有的$X_i$都是随机的，我们是在讨论一个尚未被观测的数据集。如果存在'''统计量'''(统计量定义为样本$X=\{X_1,\ldots,X_n\}$的一个函数，且不得依赖于任何未知参数)$u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)$满足$u(X_1,\ldots,X_n)<v(X_1,\ldots,X_n)$使得：
+$$
+\mathbb{P}\left(\theta\in\left(u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)\right)\right)=1-\alpha
+$$
+则称$ \left(u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)\right)$为一个用于估计参数$\theta$的$1-\alpha$置信区间，其中的$1-\alpha$称为'''置信水平'''。
 
-: <math>\mathbb{P}\left(\theta\in\left(u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)\right)\right)=1-\alpha</math>
+==对观测到的数据的定义==
+接续随机样本版本的定义，现在，对于随机变量${\cal X}$的一个已经观测到的样本$\{x_1,\ldots,x_n\}$，注意这里用小写x表记的$x_i$都是已经观测到的数字，没有随机性了，定义基于数据的$1-\alpha$置信区间为：
 
-则称<math>\left(u(X_1,\ldots,X_n),v(X_1,\ldots,X_n)\right)</math>为一个用于估计参数<math>\theta</math>的<math>1-\alpha</math>置信区间，其中的<math>1-\alpha</math>称为'''置信水平'''。
-
-;对观测到的数据的定义
-接续随机样本版本的定义，现在，对于随机变量<math>{\cal X}</math>的一个已经观测到的样本<math>\{x_1,\ldots,x_n\}</math>，注意这里用小写x表记的<math>x_i</math>都是已经观测到的数字，没有随机性了，定义基于数据的<math>1-\alpha</math>置信区间为：
-
-: <math>\left(u(x_1,\ldots,x_n),v(x_1,\ldots,x_n)\right)</math>
-
-注意，置信区间可以是单边或者双边的，单边的置信区间中设定<math>u=-\infty</math>或者<math>v=+\infty</math>，具体前者还是后者取决于所构造的置信区间的方向。
-
-初学者常犯一个概念性错误，是将基于观测到的数据所同样构造的置信区间的置信水平，误认为是它包含真实未知参数的真实值的概率。正确的理解是：置信水平只有在描述这个同样构造置信区间的'''过程'''(或称'''方法''')的意义下才能被视为一个概率。一个基于已经观测到的数据所构造出来的置信区间，其两个端点已经不再具有随机性，因此，类似的构造的间隔将会包含真正的值的比例在所有值中，其包含未知参数的真实值的概率是'''0或者1'''，但我们'''不能知道'''是前者还是后者<ref>{{cite book |author1=Moore, D |author2=McCabe, George P |author3=Craig, B |title=Introduction to the Practice of Statistics |date=2012 |publisher=San Francisco, CA: Freeman}}</ref>。
+ $ \left(u(x_1,\ldots,x_n),v(x_1,\ldots,x_n)\right)$
 
 ### 例子
 
-; 例1：正态分布，'''已知'''总体方差<math>\sigma^2</math>
-<math>1-\alpha</math>水平的正态置信区间为：
-: <math>\left( \bar{x}-z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}, \bar{x}+z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \right)</math>  (双边)
-: <math>\left( -\infty, \bar{x}+z_{1-\alpha}\frac{\sigma}{\sqrt{n}} \right)</math>  (单边)
-: <math>\left( \bar{x}-z_{1-\alpha}\frac{\sigma}{\sqrt{n}}, +\infty \right)</math>  (单边)
+例1：正态分布，已知总体方差$\sigma^2$
+$1-\alpha $水平的正态置信区间为
+$$
+\left( \bar{x}-z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}, \bar{x}+z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \right) $  (双边)\\
+\left( -\infty, \bar{x}+z_{1-\alpha}\frac{\sigma}{\sqrt{n}} \right)$  (单边)\\
+\left( \bar{x}-z_{1-\alpha}\frac{\sigma}{\sqrt{n}}, +\infty \right)$  (单边)
+$$
+以下为方便起见，只列出'''双边'''置信区间的例子，且区间中用"$\pm$"进行简记：
 
-以下为方便起见，只列出'''双边'''置信区间的例子，且区间中用"<math>\pm</math>"进行简记：
+例2：正态分布，'''未知'''总体方差$\sigma^2$
 
-; 例2：正态分布，'''未知'''总体方差<math>\sigma^2</math>
-<math>1-\alpha</math>水平的'''双边'''正态置信区间为：
-: <math>\left( \bar{x}\pm t_{n-1;\alpha/2}\frac{s}{\sqrt{n}} \right)</math>
+$1-\alpha$水平的'''双边'''正态置信区间为：
+$\left( \bar{x}\pm t_{n-1;\alpha/2}\frac{s}{\sqrt{n}} \right) $
 
-; 例3：两个独立正态样本<math>x</math>和<math>y</math>，样本大小为<math>m</math>和<math>n</math>，估计总体均值之差<math>\mu_1-\mu_2</math>，假设总体方差'''未知但相等：<math>\sigma_1=\sigma_2</math>'''(如果未知且不等就要应用{{tsl|en|Welch's t-test|Welch公式}}来确定t分布的自由度)
-<math>1-\alpha</math>水平的'''双边'''正态置信区间为：
-: <math>\left( \bar{x}-\bar{y}\pm t_{m+n-2;\alpha/2}\cdot s_p\cdot \sqrt{\frac1m+\frac1n} \right)</math>，其中<math>s_p=\sqrt{\frac{(m-1)s_x^2+(n-1)s_y^2}{m+n-2}}</math>且<math>s_x,s_y</math>分别表示<math>x</math>和<math>y</math>的样本标准差。
+ 例3：两个独立正态样本$x$和$y$，样本大小为$m$和$n$，估计总体均值之差$\mu_1-\mu_2$，假设总体方差'''未知但相等： $\sigma_1=\sigma_2$'''(如果未知且不等就要应用来确定t分布的自由度)
+$1-\alpha$水平的'''双边'''正态置信区间为：
+ $\left( \bar{x}-\bar{y}\pm t_{m+n-2;\alpha/2}\cdot s_p\cdot \sqrt{\frac1m+\frac1n} \right)$，其中$s_p=\sqrt{\frac{(m-1)s_x^2+(n-1)s_y^2}{m+n-2}}$且$s_x,s_y$分别表示$x$和$y$的样本标准差。
 
 ### 构造法
+
 一般来说，置信区间的构造需要先找到一个'''枢轴变量'''（{{Lang|en|Pivotal quantity}}，或称{{Lang|en|Pivot}}），其表达式依赖于样本以及带估计的未知参数(但'''不能'''依赖于总体的其它未知参数)，其分布'''不依赖于'''任何未知参数。
 
-下面以上述例2为例，说明如何利用枢轴变量构造置信区间。对于一个正态分布的随机样本<math>{X_1,\ldots,X_n}</math>，可以证明(此证明对初学者并不容易)如下统计量'''互相独立'''：
-: <math>\bar{X}=\frac1n \sum_{i=1}^n X_i </math>  和   <math>S^2=\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{n-1}</math>
+下面以上述例2为例，说明如何利用枢轴变量构造置信区间。对于一个正态分布的随机样本${X_1,\ldots,X_n}$，可以证明(此证明对初学者并不容易)如下统计量'''互相独立'''：
+ $\bar{X}=\frac1n \sum_{i=1}^n X_i $  和   $S^2=\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{n-1}$
 它们的分布是：
-: <math>\frac{\bar{X}-\mu}{\sigma}\sim N(0,1)</math>  和  <math>(n-1)\frac{S^2}{\sigma^2} \sim \chi^2_{n-1}</math>
+ $\frac{\bar{X}-\mu}{\sigma}\sim N(0,1)$  和  $(n-1)\frac{S^2}{\sigma^2} \sim \chi^2_{n-1}$
 所以根据[[t分布]]的定义，有
-:<math>t = \frac{\bar{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}</math>
+$t = \frac{\bar{X}-\mu}{S/\sqrt{n}}\sim t_{n-1}$
 于是反解如下等式左边括号中的不等式
-:<math>\mathbb{P}\left( -t_{n-1;\alpha/2}<t=\frac{\bar{X}-\mu}{S\sqrt{n}}<t_{n-1;\alpha/2} \right)=1-\alpha</math>
-就得到了例2中双边置信区间的表达式。
+$\mathbb{P}\left( -t_{n-1;\alpha/2}<t=\frac{\bar{X}-\mu}{S\sqrt{n}}<t_{n-1;\alpha/2} \right)=1-\alpha$
+就得到了例2中双边置信区间的表达式
 
 ### 与参数检验的联系
-有时，置信区间可以用来进行参数检验。例如在上面的例1中构造的'''双边'''<math>1-\alpha</math>水平置信区间，可以用来检验具有相应的'''显著水平为<math>\alpha</math>'''的'''双边'''对立假设，具体地说是如下检验：
-正态分布总体，知道总体方差<math>\sigma^2</math>，'''在<math>\alpha</math>显著水平下'''检验：
-: <math>H_0: \mu=\mu_0</math> vs <math>H_1: \mu \neq\mu_0</math>
-检验方法是：当且仅当相应的<math>1-\alpha</math>水平置信区间不包含<math>\mu_0</math>时拒绝零假设<math>H_0</math>
 
-例1中构造的'''双边'''<math>1-\alpha</math>水平置信区间也可以用来检验如下两个显著水平为'''<math>\alpha/2</math>'''的'''单边'''对立假设：
-: <math>H_0: \mu\leq \mu_0</math> vs <math>H_1: \mu >\mu_0</math>
+有时，置信区间可以用来进行参数检验。例如在上面的例1中构造的'''双边'''$1-\alpha$水平置信区间，可以用来检验具有相应的'''显著水平为$\alpha$的双边对立假设，具体地说是如下检验：
+正态分布总体，知道总体方差$\sigma^2$，'''在$\alpha$显著水平下'''检验：
+ $H_0: \mu=\mu_0$ vs $H_1: \mu \neq\mu_0$
+检验方法是：当且仅当相应的$1-\alpha$水平置信区间不包含$\mu_0$时拒绝零假设$H_0$
+
+例1中构造的'''双边'''$1-\alpha$水平置信区间也可以用来检验如下两个显著水平为'''$\alpha/2$'''的'''单边'''对立假设：
+ $H_0: \mu\leq \mu_0$ vs $H_1: \mu >\mu_0$
 和
-: <math>H_0: \mu\geq \mu_0</math> vs <math>H_1: \mu <\mu_0</math>
-检验方法是完全类似的，比如对于上述第一个单边检验<math>H_1: \mu >\mu_0</math>，当且仅当双边置信区间的左端点大于<math>\mu_0</math>时拒绝零假设。
-
+ $ H_0: \mu\geq \mu_0$vs $H_1: \mu <\mu_0$
+检验方法是完全类似的，比如对于上述第一个单边检验$H_1: \mu >\mu_0$，当且仅当双边置信区间的左端点大于$\mu_0$时拒绝零假设。
